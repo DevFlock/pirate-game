@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+.title {
+    position: absolute;
+    width: 742px;
+    height: 97px;
+    left: 53px;
+    top: 13px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 112px;
+    
+    color: #000000;
+    margin: 0;
+}
+
+.upNext {
+    border: 3px solid black;
+    position: absolute;
+    width: 23%;
+    min-width: 350px;
+    height: 58%;
+    min-height: 600px;
+    left: 203px;
+    top: 258px;
+
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 36px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    display: flexbox;
+}
+
+.upNext > h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+}
+
+.upNext > input {
+    /* Center the input box at the bottom */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 10%;
+    font-size: 20px;
+    border: 3px solid #A0A0A0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.time { 
+    position: absolute;
+    left: 23px;
+    bottom: -10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.ver-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.game-board {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+
+    width: 957px;
+    height: 957px;
+    /* background-color: #000000; */
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px;
+    background-color: #252525;
+    padding: 5px;
+}
+
+.grid {
+    background-color: white;
+    font-size: 50px;
+    font-weight: bold;
+    color: #868686;
+    user-select: none;
+}
+
+.selected {
+    background-color: #252525;
+    color: rgb(187, 187, 187);
+}
+
+.names {
+    display: block;
+    margin: 5px;
+    margin-left: 40px;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.names:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+}
